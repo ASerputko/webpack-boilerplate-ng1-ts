@@ -1,0 +1,46 @@
+{
+  "name": "webpack-boilerplate-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf -- dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server --config config/webpack.dev.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base src/",
+    "build": "npm run clean && webpack --config config/webpack.prod.js  --progress --profile --colors --display-error-details --display-cached --bail",
+    "tsd:install": "tsd install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.17.0",
+    "compression-webpack-plugin": "^0.3.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.19.0",
+    "imports-loader": "^0.6.5",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.7.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "tsd": "^0.6.5",
+    "tslint": "^3.10.2",
+    "tslint-loader": "^2.1.4",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-merge": "^0.13.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}
