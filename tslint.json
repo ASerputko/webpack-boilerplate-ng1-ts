@@ -1,5 +1,5 @@
 {
-    "rulesDirectory": "config/rules/",
+    "rulesDirectory": "config/tslint/",
     "rules": {
         "member-access": false,
         "member-ordering": [

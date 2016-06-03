@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rimraf -- dist",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint src/**/*.ts",
     "server": "webpack-dev-server --config config/webpack.dev.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base src/",
     "build": "npm run clean && webpack --config config/webpack.prod.js  --progress --profile --colors --display-error-details --display-cached --bail",
     "tsd:install": "tsd install"
