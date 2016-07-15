@@ -5,10 +5,10 @@ export class HomeComponent {
 
 export class HomeController {
     
-    static $inject = ['$rootScope'];
+    static $inject = ['$rootScope', 'layoutService'];
 
-    constructor(private $rootScope) {
-        $rootScope.title = 'Home | JavaScript Tutorial Sample App';
+    constructor(private $rootScope, private layoutService) {
+        layoutService.updateTitle('Home');
     }
 
 };

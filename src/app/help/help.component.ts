@@ -5,9 +5,9 @@ export class HelpComponent {
 
 export class HelpController {
     
-    static $inject = ['$rootScope'];
+    static $inject = ['$rootScope', 'layoutService'];
 
-    constructor(private $rootScope) {
-        $rootScope.title = 'Help | JavaScript Tutorial Sample App';
+    constructor(private $rootScope, private layoutService) {
+        layoutService.updateTitle('Help');
     }
 };

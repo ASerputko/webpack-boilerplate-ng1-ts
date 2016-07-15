@@ -1,11 +1,12 @@
 import * as angular from 'angular';
-// import { HelpRoutes } from './help.routes';
-import { HelpComponent, HelpController } from './help.component';
+import { commonModule } from '../common/common.module';
+import {HelpComponent, HelpController} from './help.component';
 
 export let helpModule = angular
-    .module('app.help', [])
+    .module('app.help', [commonModule])
     .component('help', new HelpComponent())
     .controller('HelpController', HelpController)
+    // TODO: refactor this part
     .config(['$stateProvider', ($stateProvider: any) => {
         $stateProvider
             .state('help', {

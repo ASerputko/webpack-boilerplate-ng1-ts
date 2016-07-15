@@ -5,9 +5,9 @@ export class AboutComponent {
 
 export class AboutController {
 
-    static $inject = ['$rootScope'];
+    static $inject = ['$rootScope', 'layoutService'];
 
-    constructor(private $rootScope) {
-        $rootScope.title = 'About | JavaScript Tutorial Sample App';
+    constructor(private $rootScope, private layoutService) {
+        layoutService.updateTitle('About');
     }
 };
